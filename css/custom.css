@@ -14,6 +14,9 @@ body{
     font-family: 'Cormorant Garamond', serif;
 }
 
+.k-footer-link:hover {
+    color: #C19C4D;
+}
 
 .k-font-color-black {
     color: 141414;
