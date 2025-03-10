@@ -2,22 +2,92 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-.k-font-color-gold{
-    color: #C19C4D;
-}
+/* background color */
 
 .k-bg-color-gold{
     background-color: #C19C4D;
 }
 
+/* font family */
+
 .k-font-cormorant{
     font-family: 'Cormorant Garamond', serif;
 }
 
+
+/* font colors */
+
+.k-font-color-black {
+    color: 141414;
+}
+
+.k-font-color-gold{
+    color: #C19C4D;
+}
+
+/* buttons */
+
+/* gold in black background */
+.k-white-button {
+    background-color: #fff;
+    color: #141414;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+}
+
+.k-white-button:hover {
+    background-color: #C19C4D;
+    color: #141414;
+    padding: 0.5rem 2rem;
+}
+
+.k-gold-button {
+    background-color: #C19C4D;
+    color: #141414;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+}
+
+.k-gold-button:hover {
+    background-color: #141414;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 2rem;
+}
+
+/* gold in dark background */
+.k-gold-button-light {
+    background-color: #C19C4D;
+    color: #141414;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+}
+
+.k-gold-button-light:hover {
+    background-color: #ffffff;
+    color: #141414;
+    padding: 0.5rem 2rem;
+}
+
+
+
+
+.k-black-button {
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+    background-color: #141414;
+}
+
+.k-black-button:hover {
+    background-color: #fff;
+    color: black;
+    padding: 0.5rem 2rem;
+}
+
+/* links */
 .k-footer-link:hover {
     color: #C19C4D;
 }
 
-.k-font-color-black {
-    color: 141414;
+.k-nav-link:hover {
+    color: #C19C4D;
 }

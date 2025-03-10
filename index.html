@@ -23,10 +23,10 @@
             <h1 class="text-2xl font-bold k-font-color-gold"><a href="#">Koro Filipino</a></h1>
             <nav>
                 <ul class="flex space-x-6">
-                    <li><a href="about-us.html" class="hover:text-gray-400 k-font-color-gold">About Us</a></li>
-                    <li><a href="#" class="hover:text-gray-400 k-font-color-gold">Events</a></li>
-                    <li><a href="#" class="hover:text-gray-400 k-font-color-gold">Gallery</a></li>
-                    <li><a href="#" class="hover:text-gray-400 k-font-color-gold">Get In Touch</a></li>
+                    <li><a href="about-us.html" class="k-nav-link">About Us</a></li>
+                    <li><a href="#" class="k-nav-link">Events</a></li>
+                    <li><a href="#" class="k-nav-link">Gallery</a></li>
+                    <li><a href="#" class="k-nav-link">Get In Touch</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,7 +38,7 @@
         <div class="relative z-10 flex flex-col items-start justify-center h-screen text-white text-center p-24">
             <h2 class="text-4xl md:text-6xl font-bold k-font-cormorant italic">Join The Family</h2>
             <p class="mt-4">Join the Family and sing with Koro Filipino! Connect with others and share your love for music.</p>
-            <a href="#" class="mt-4 px-6 py-2 bg-white text-black rounded-md">Join Us</a>
+            <a href="#" class="mt-4 px-6 py-2 bg-white k-white-button font-semibold">JOIN US</a>
         </div>
     </section>
 
@@ -46,12 +46,12 @@
        <section class="p-24 bg-black text-white">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             <div class="text-center md:text-left">
-                <h2 class="text-3xl font-bold">Upcoming Events</h2>
+                <h2 class="text-3xl font-bold k-font-cormorant k-font-color-gold">Upcoming Events</h2>
                 <div class="mt-8">
                     <p>Feb 14 | 8:00 am - 5:00 pm | Event Name</p>
                     <p>Feb 14 | 8:00 am - 5:00 pm | Event Name</p>
                     <p>Feb 14 | 8:00 am - 5:00 pm | Event Name</p>
-                    <a href="#" class="inline-block mt-4 px-6 py-2 bg-yellow-500 text-black rounded-md">See All Events</a>
+                    <a href="#" class="inline-block mt-4 px-6 py-2 k-gold-button-light font-semibold">SEE ALL EVENTS</a>
                 </div>
             </div>
             <div class="flex justify-center">
@@ -61,29 +61,45 @@
     </section>
 
     <!-- Why Join Us -->
-    <section class="py-12 text-center">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            <div class="flex justify-center">
-                <img src="images/why-join-us.jpg" alt="Why Join Us Image" class="w-full max-w-md rounded-lg shadow-lg">
+    <section class="py-12 text-center bg-[#f8f8f8]">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Gallery Section -->
+            <div class="grid grid-cols-2 gap-4">
+                <img src="images/gallery1.jpg" alt="Gallery Image 1" class="rounded-lg shadow-lg">
+                <img src="images/gallery2.jpg" alt="Gallery Image 2" class="rounded-lg shadow-lg">
+                <img src="images/gallery3.jpg" alt="Gallery Image 3" class="rounded-lg shadow-lg">
+                <img src="images/gallery4.jpg" alt="Gallery Image 4" class="rounded-lg shadow-lg">
             </div>
-            <div class="text-center md:text-left">
-                <h2 class="text-3xl font-bold">Why Join Us?</h2>
-                <p class="mt-4 text-gray-600">Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Pellentesque Elementum Tortor Sed Eros Pretium, Id Vehicula Tellus Tincidunt. Morbi Convallis laculis Metus</p>
-                <ul class="mt-4 text-left inline-block">
-                    <li> Perks such as food</li>
-                    <li> Exclusive Events</li>
-                    <li> A Family Etc</li>
-                    <li> Whatever Perks Here</li>
+    
+            <!-- Content Section -->
+            <div class="text-left">
+                <h2 class="text-4xl font-bold k-font-cormorant text-[#141414]">Why Join Us?</h2>
+                <p class="mt-4 text-gray-600">
+                    Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. 
+                    Pellentesque Elementum Tortor Sed Eros Pretium, Id Vehicula Tellus Tincidunt. 
+                    Morbi Convallis laculis Metus
+                </p>
+    
+                <ul class="mt-4 text-left space-y-2">
+                    <li>✅ Perks Here Such As Food</li>
+                    <li>✅ Exclusive Events</li>
+                    <li>✅ A Family Etc</li>
+                    <li>✅ Whatever Perks Here</li>
                 </ul>
-                <p class="mt-4 text-gray-600">Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Pellentesque Elementum Tortor Sed Eros Pretium, Id Vehicula Tellus Tincidunt. Morbi Convallis laculis Metus</p>
-                
-            </div>
-
-            <div class="text-center md:text-left">
-                <a href="#" class="mt-4 px-6 py-2 bg-yellow-500 text-black rounded-md">View Our Gallery</a>
+    
+                <p class="mt-4 text-gray-600">
+                    Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. 
+                    Pellentesque Elementum Tortor Sed Eros Pretium, Id Vehicula Tellus Tincidunt. 
+                    Morbi Convallis laculis Metus
+                </p>
+    
+                <a href="#" class="k-gold-button mt-6 inline-block px-6 py-2 k-bg-color-gold text-black font-semibold">
+                    VIEW OUR GALLERY
+                </a>
             </div>
         </div>
     </section>
+    
 
     <!-- Our Performances -->
     <section class="py-12 bg-gradient-to-r  text-center k-bg-color-gold">
@@ -94,54 +110,65 @@
         </div>
 
         <div class="text-center md:text-center p-6">
-            <a href="#" class="mt-4 px-6 py-2 bg-yellow-500 text-black rounded-md">Watch More</a>
+            <a href="#" class="k-black-button mt-4 px-6 py-2 k-bg-black text-white">WATCH MORE</a>
         </div>
         
     </section>
 
     <!-- Social Media -->
-    <section class="py-12 text-center">
+    <section class="py-12 text-center bg-black text-white">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            <div class="text-center md:text-left">
-                <h2 class="text-3xl font-bold">Follow us on Social Media!</h2>
-                <p class="mt-4">Stay connected and inspired.</p>
+            <div class="text-left">
+                <h2 class="text-3xl italic k-font-color-gold k-font-cormorant font-semibold">Follow us on Social Media!</h2>
+                <p class="mt-4">Stay Connected And Inspired! Follow Us On Instagram For Exclusive Behind-The-Scenes Content, Updates, And A Closer Look At What’s Happening At Our Events.</p>
                 <div class="flex flex-col md:flex-row md:space-x-6 mt-4">
                     <!-- Left Column: Photo -->
                     <div class="md:w-1/2">
-                        <img src="your-photo-url.jpg" alt="Social Media Image" class="w-full rounded-lg">
+                        <img src="/images/instagram-screenshot.png" alt="Social Media Image" class="w-full">
                     </div>
-                    
+    
                     <!-- Right Column: Buttons and Social Media Icons -->
                     <div class="md:w-1/2 mt-4 md:mt-0">
                         <!-- 3 Buttons on Top -->
-                        <div class="flex gap-6">
-                            <button class="text-xl k-bg-color-gold p-2 rounded-lg">Button 1</button>
-                            <button class="text-xl k-bg-color-gold p-2 rounded-lg">Button 2</button>
-                            <button class="text-xl k-bg-color-gold p-2 rounded-lg">Button 3</button>
+                        <div class="flex gap-4 mb-6">
+                            <button class="text-xl k-bg-color-gold text-black px-4 py-2 rounded-lg">LIKE</button>
+                            <button class="text-xl k-bg-color-gold text-black px-4 py-2 rounded-lg">SHARE</button>
+                            <button class="text-xl k-bg-color-gold text-black px-4 py-2 rounded-lg">SUBSCRIBE</button>
                         </div>
-                        
-                        <!-- Social Media Icons -->
-                        <ul class=" mt-6">
-                            <li><a href="#" class="text-xl"> Instagram</a></li>
-                            <li><a href="#" class="text-xl"> Facebook</a></li>
-                            <li><a href="#" class="text-xl"> Twitter</a></li>
+    
+                        <!-- Social Media Info -->
+                        <ul class="text-left space-y-2">
+                            <li class="flex items-center gap-2">
+                                <img src="/images/facebook-icon.png" alt="Fb page" class="h-6"> Koro Filipino Society Of Edmonton
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <img src="/images/instagram-icon.png" alt="Instagram" class="h-6"> @korofilipinoyeg
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <img src="/images/youtube-icon.png" alt="YouTube" class="h-6"> Koro Filipino
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
+    
             <div class="flex justify-center">
-                <img src="your-image-url.jpg" alt="Social Media Image" class="w-full max-w-md rounded-lg shadow-lg">
+                <div class="relative">
+                    <h3 class="absolute top-0 right-0 text-xl text-white">Lorem Ipsum Dolor</h3>
+                    <img src="/images/singer-image.jpg" alt="Singer Image" class="w-full max-w-md rounded-lg shadow-lg">
+                </div>
             </div>
         </div>
     </section>
+    
 
     <!-- Mailing List -->
     <section class="py-12 bg-white text-center">
         <h2 class="text-3xl font-bold mb-4">Join our mailing list.</h2>
         <p class="mb-6">Be the first to know about our special events!</p>
         <div class="flex flex-col items-center"> 
-            <input type="email" placeholder="EMAIL ADDRESS" class="border rounded p-2 w-full max-w-md mb-4">
-            <button class="bg-yellow-500 text-black rounded-md px-6 py-2 font-semibold w-full max-w-md">SUBSCRIBE</button>
+            <input type="email" placeholder="Email Address" class="border rounded p-2 w-full max-w-md mb-4">
+            <button class="k-gold-button px-6 py-2 font-semibold w-full max-w-md">SUBSCRIBE</button>
         </div>
         <p class="mt-8 text-sm">Interested in joining our group? Fill out our <a href="#" class="text-yellow-500 underline">Audition Form!</a></p>
     </section>
