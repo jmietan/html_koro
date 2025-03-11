@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="css/custom.css">
 
 
 
@@ -20,13 +20,13 @@
     <!-- Header -->
     <header class="bg-black text-white py-4">
         <div class="container mx-auto flex justify-between items-center px-6">
-            <h1 class="text-2xl font-bold k-font-color-gold">Koro Filipino</h1>
+            <h1 class="text-2xl font-bold k-font-color-gold"><a href="#">Koro Filipino</a></h1>
             <nav>
                 <ul class="flex space-x-6">
-                    <li><a href="#" class="hover:text-gray-400 k-font-color-gold">About Us</a></li>
-                    <li><a href="#" class="hover:text-gray-400 k-font-color-gold">Events</a></li>
-                    <li><a href="#" class="hover:text-gray-400 k-font-color-gold">Gallery</a></li>
-                    <li><a href="#" class="hover:text-gray-400 k-font-color-gold">Get In Touch</a></li>
+                    <li><a href="about-us.html" class="k-nav-link">About Us</a></li>
+                    <li><a href="#" class="k-nav-link">Events</a></li>
+                    <li><a href="#" class="k-nav-link">Gallery</a></li>
+                    <li><a href="#" class="k-nav-link">Get In Touch</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,7 +38,7 @@
         <div class="relative z-10 flex flex-col items-start justify-center h-screen text-white text-center p-24">
             <h2 class="text-4xl md:text-6xl font-bold k-font-cormorant italic">Join The Family</h2>
             <p class="mt-4">Join the Family and sing with Koro Filipino! Connect with others and share your love for music.</p>
-            <a href="#" class="mt-4 px-6 py-2 bg-white text-black rounded-md">Join Us</a>
+            <a href="#" class="mt-4 px-6 py-2 bg-white k-white-button font-semibold">JOIN US</a>
         </div>
     </section>
 
@@ -46,12 +46,12 @@
        <section class="p-24 bg-black text-white">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             <div class="text-center md:text-left">
-                <h2 class="text-3xl font-bold">Upcoming Events</h2>
+                <h2 class="text-3xl font-bold k-font-cormorant k-font-color-gold">Upcoming Events</h2>
                 <div class="mt-8">
                     <p>Feb 14 | 8:00 am - 5:00 pm | Event Name</p>
                     <p>Feb 14 | 8:00 am - 5:00 pm | Event Name</p>
                     <p>Feb 14 | 8:00 am - 5:00 pm | Event Name</p>
-                    <a href="#" class="inline-block mt-4 px-6 py-2 bg-yellow-500 text-black rounded-md">See All Events</a>
+                    <a href="#" class="inline-block mt-4 px-6 py-2 k-gold-button-light font-semibold">SEE ALL EVENTS</a>
                 </div>
             </div>
             <div class="flex justify-center">
@@ -61,29 +61,45 @@
     </section>
 
     <!-- Why Join Us -->
-    <section class="py-12 text-center">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            <div class="flex justify-center">
-                <img src="images/why-join-us.jpg" alt="Why Join Us Image" class="w-full max-w-md rounded-lg shadow-lg">
+    <section class="py-12 text-center bg-[#f8f8f8]">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Gallery Section -->
+            <div class="grid grid-cols-2 gap-4">
+                <img src="images/gallery1.jpg" alt="Gallery Image 1" class="rounded-lg shadow-lg">
+                <img src="images/gallery2.jpg" alt="Gallery Image 2" class="rounded-lg shadow-lg">
+                <img src="images/gallery3.jpg" alt="Gallery Image 3" class="rounded-lg shadow-lg">
+                <img src="images/gallery4.jpg" alt="Gallery Image 4" class="rounded-lg shadow-lg">
             </div>
-            <div class="text-center md:text-left">
-                <h2 class="text-3xl font-bold">Why Join Us?</h2>
-                <p class="mt-4 text-gray-600">Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Pellentesque Elementum Tortor Sed Eros Pretium, Id Vehicula Tellus Tincidunt. Morbi Convallis laculis Metus</p>
-                <ul class="mt-4 text-left inline-block">
-                    <li> Perks such as food</li>
-                    <li> Exclusive Events</li>
-                    <li> A Family Etc</li>
-                    <li> Whatever Perks Here</li>
+    
+            <!-- Content Section -->
+            <div class="text-left">
+                <h2 class="text-4xl font-bold k-font-cormorant text-[#141414]">Why Join Us?</h2>
+                <p class="mt-4 text-gray-600">
+                    Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. 
+                    Pellentesque Elementum Tortor Sed Eros Pretium, Id Vehicula Tellus Tincidunt. 
+                    Morbi Convallis laculis Metus
+                </p>
+    
+                <ul class="pl-5 mt-4 text-left space-y-2">
+                    <li class="list-disc">Perks Here Such As Food</li>
+                    <li class="list-disc">Exclusive Events</li>
+                    <li class="list-disc">A Family Etc</li>
+                    <li class="list-disc">Whatever Perks Here</li>
                 </ul>
-                <p class="mt-4 text-gray-600">Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Pellentesque Elementum Tortor Sed Eros Pretium, Id Vehicula Tellus Tincidunt. Morbi Convallis laculis Metus</p>
-                
-            </div>
-
-            <div class="text-center md:text-left">
-                <a href="#" class="mt-4 px-6 py-2 bg-yellow-500 text-black rounded-md">View Our Gallery</a>
+    
+                <p class="mt-4 text-gray-600">
+                    Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. 
+                    Pellentesque Elementum Tortor Sed Eros Pretium, Id Vehicula Tellus Tincidunt. 
+                    Morbi Convallis laculis Metus
+                </p>
+    
+                <a href="#" class="k-gold-button mt-6 inline-block px-6 py-2 k-bg-color-gold text-black font-semibold">
+                    VIEW OUR GALLERY
+                </a>
             </div>
         </div>
     </section>
+    
 
     <!-- Our Performances -->
     <section class="py-12 bg-gradient-to-r  text-center k-bg-color-gold">
@@ -94,104 +110,113 @@
         </div>
 
         <div class="text-center md:text-center p-6">
-            <a href="#" class="mt-4 px-6 py-2 bg-yellow-500 text-black rounded-md">Watch More</a>
+            <a href="#" class="k-black-button mt-4 px-6 py-2 k-bg-black text-white">WATCH MORE</a>
         </div>
         
     </section>
 
     <!-- Social Media -->
-    <section class="py-12 text-center">
+    <section class="py-12 text-center bg-black text-white">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            <div class="text-center md:text-left">
-                <h2 class="text-3xl font-bold">Follow us on Social Media!</h2>
-                <p class="mt-4">Stay connected and inspired.</p>
+            <div class="text-left">
+                <h2 class="text-3xl italic k-font-color-gold k-font-cormorant font-semibold">Follow us on Social Media!</h2>
+                <p class="mt-4">Stay Connected And Inspired! Follow Us On Instagram For Exclusive Behind-The-Scenes Content, Updates, And A Closer Look At What’s Happening At Our Events.</p>
                 <div class="flex flex-col md:flex-row md:space-x-6 mt-4">
                     <!-- Left Column: Photo -->
                     <div class="md:w-1/2">
-                        <img src="your-photo-url.jpg" alt="Social Media Image" class="w-full rounded-lg">
+                        <img src="/images/instagram-screenshot.png" alt="Social Media Image" class="w-full">
                     </div>
-                    
+    
                     <!-- Right Column: Buttons and Social Media Icons -->
                     <div class="md:w-1/2 mt-4 md:mt-0">
                         <!-- 3 Buttons on Top -->
-                        <div class="flex gap-6">
-                            <button class="text-xl k-bg-color-gold p-2 rounded-lg">Button 1</button>
-                            <button class="text-xl k-bg-color-gold p-2 rounded-lg">Button 2</button>
-                            <button class="text-xl k-bg-color-gold p-2 rounded-lg">Button 3</button>
+                        <div class="flex gap-4 mb-6">
+                            <button class="text-xl k-bg-color-gold text-black px-4 py-2 rounded-lg">LIKE</button>
+                            <button class="text-xl k-bg-color-gold text-black px-4 py-2 rounded-lg">SHARE</button>
+                            <button class="text-xl k-bg-color-gold text-black px-4 py-2 rounded-lg">SUBSCRIBE</button>
                         </div>
-                        
-                        <!-- Social Media Icons -->
-                        <ul class=" mt-6">
-                            <li><a href="#" class="text-xl"> Instagram</a></li>
-                            <li><a href="#" class="text-xl"> Facebook</a></li>
-                            <li><a href="#" class="text-xl"> Twitter</a></li>
+    
+                        <!-- Social Media Info -->
+                        <ul class="text-left space-y-2">
+                            <li class="flex items-center gap-2">
+                                <img src="/images/facebook-icon.png" alt="Fb page" class="h-6"> Koro Filipino Society Of Edmonton
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <img src="/images/instagram-icon.png" alt="Instagram" class="h-6"> @korofilipinoyeg
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <img src="/images/youtube-icon.png" alt="YouTube" class="h-6"> Koro Filipino
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
+    
             <div class="flex justify-center">
-                <img src="your-image-url.jpg" alt="Social Media Image" class="w-full max-w-md rounded-lg shadow-lg">
+                <div class="relative">
+                    <h3 class="absolute top-0 right-0 text-xl text-white">Lorem Ipsum Dolor</h3>
+                    <img src="/images/singer-image.jpg" alt="Singer Image" class="w-full max-w-md rounded-lg shadow-lg">
+                </div>
             </div>
         </div>
     </section>
+    
 
     <!-- Mailing List -->
     <section class="py-12 bg-white text-center">
         <h2 class="text-3xl font-bold mb-4">Join our mailing list.</h2>
         <p class="mb-6">Be the first to know about our special events!</p>
         <div class="flex flex-col items-center"> 
-            <input type="email" placeholder="EMAIL ADDRESS" class="border rounded p-2 w-full max-w-md mb-4">
-            <button class="bg-yellow-500 text-black rounded-md px-6 py-2 font-semibold w-full max-w-md">SUBSCRIBE</button>
+            <input type="email" placeholder="Email Address" class="border rounded p-2 w-full max-w-md mb-4">
+            <button class="k-gold-button px-6 py-2 font-semibold w-full max-w-md">SUBSCRIBE</button>
         </div>
         <p class="mt-8 text-sm">Interested in joining our group? Fill out our <a href="#" class="text-yellow-500 underline">Audition Form!</a></p>
     </section>
 
     <!-- Footer -->
     <footer class="bg-black text-white py-8">
-        <!-- First Row (Logo and 3 Columns) -->
-        <div class="container mx-auto flex flex-col sm:flex-row justify-center items-center">
-            <!-- Logo Column -->
-            <div class="w-full sm:w-1/2 text-center mb-4 sm:mb-0">
-                <img src="your-logo-url.png" alt="Logo" class="h-12 mx-auto">
-            </div>
-    
-            <!-- 3 Columns inside the second column -->
-            <div class="w-full sm:w-1/2 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-                <div>
-                    <h3 class="font-bold text-lg">Column 1</h3>
-                    <p class="text-sm">This is the content for column 1.</p>
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-center items-center pb-6 gap-10">
+                <!-- Logo Section -->
+                <div class="flex flex-col items-center text-center w-full">
+                    <img src="/path-to-logo.png" alt="Koro Filipino Logo" class="h-24 mb-2">
                 </div>
-                <div>
-                    <h3 class="font-bold text-lg">Column 2</h3>
-                    <p class="text-sm">This is the content for column 2.</p>
+    
+                <!-- Pages Section -->
+                <div class="flex flex-col text-center w-full self-start">
+                    <h3 class="italic k-font-color-gold font-semibold k-font-cormorant text-2xl mb-2">Pages</h3>
+                    <a href="#" class="k-footer-link">About Us</a>
+                    <a href="#" class="k-footer-link">Events</a>
+                    <a href="#" class="k-footer-link">Videos</a>
+                    <a href="#" class="k-footer-link">Get in Touch</a>
                 </div>
-                <div>
-                    <h3 class="font-bold text-lg">Column 3</h3>
-                    <p class="text-sm">This is the content for column 3.</p>
+    
+                <!-- Koro Filipino Section -->
+                <div class="flex flex-col text-center w-full self-start">
+                    <h3 class="italic k-font-color-gold font-semibold k-font-cormorant text-2xl mb-2">Koro Filipino</h3>
+                    <a href="#" class="k-footer-link">Privacy Page</a>
+                    <a href="#" class="k-footer-link">Accessibility Page</a>
+                    <a href="#" class="k-footer-link">Developer Notes</a>
                 </div>
             </div>
-        </div>
     
-        <!-- Second Row (3 Social Media Icons, Logo Name, and Lorem Ipsum) -->
-        <div class="container mx-auto mt-8">
-            <!-- Social Media Icons -->
-            <div class="flex justify-center space-x-4 mb-4">
-                <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
-            </div>
+            <!-- Divider Line -->
+            <div class="w-full border-t border-[#C19C4D] my-6"></div>
     
-            <!-- Logo Name (Koro Filipino) -->
-            <div class="text-center mb-4">
-                <p class="font-bold text-lg">Koro Filipino</p>
-            </div>
-    
-            <!-- Lorem Ipsum Text -->
-            <div class="text-center">
-                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula orci non metus auctor, eu gravida magna laoreet.</p>
+            <!-- Social Media & Copyright Section -->
+            <div class="flex flex-col items-center w-full">
+                <div class="flex gap-4 text-[#C19C4D] text-2xl">
+                    <a href="#"><img src="/images/facebook.png" alt="Facebook" class="h-8"></a>
+                    <a href="#"><img src="/images/instagram.png" alt="Instagram" class="h-8"></a>
+                    <a href="#"><img src="/images/youtube.png" alt="YouTube" class="h-8"></a>
+                </div>
+                <h2 class="k-font-cormorant text-2xl mt-4 text-[#C19C4D]">Koro Filipino</h2>
+                <p class="text-sm mt-2 text-gray-500">&copy; 2025 Koro Filipino Website made by LoopThree Digital</p>
             </div>
         </div>
     </footer>
+    
+    
     
 
 
